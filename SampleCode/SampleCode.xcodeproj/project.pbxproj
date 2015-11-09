@@ -26,10 +26,11 @@
 		83428D6F1BF0597E00A73DDA /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D6E1BF0597E00A73DDA /* AccountViewController.swift */; };
 		83428D711BF059B000A73DDA /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D701BF059B000A73DDA /* CheckoutViewController.swift */; };
 		83428D731BF059E100A73DDA /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D721BF059E100A73DDA /* ProductViewController.swift */; };
-		83428D751BF05A4A00A73DDA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D741BF05A4A00A73DDA /* UIViewControllerExtension.swift */; };
 		83428D771BF05AAF00A73DDA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D761BF05AAF00A73DDA /* BaseViewController.swift */; };
 		83428D791BF06F2E00A73DDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D781BF06F2E00A73DDA /* Constants.swift */; };
 		83428D7B1BF06FC000A73DDA /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D7A1BF06FC000A73DDA /* StoryboardManager.swift */; };
+		83428D7D1BF08CA800A73DDA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D7C1BF08CA800A73DDA /* UIColorExtension.swift */; };
+		83428D7F1BF092BB00A73DDA /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D7E1BF092BB00A73DDA /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,10 +55,11 @@
 		83428D6E1BF0597E00A73DDA /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		83428D701BF059B000A73DDA /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		83428D721BF059E100A73DDA /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
-		83428D741BF05A4A00A73DDA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		83428D761BF05AAF00A73DDA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		83428D781BF06F2E00A73DDA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		83428D7A1BF06FC000A73DDA /* StoryboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
+		83428D7C1BF08CA800A73DDA /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		83428D7E1BF092BB00A73DDA /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +140,8 @@
 		83428D481BF054B000A73DDA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				83428D741BF05A4A00A73DDA /* UIViewControllerExtension.swift */,
+				83428D7C1BF08CA800A73DDA /* UIColorExtension.swift */,
+				83428D7E1BF092BB00A73DDA /* UIImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -318,14 +321,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				83428D6B1BF058EF00A73DDA /* SearchViewController.swift in Sources */,
+				83428D7D1BF08CA800A73DDA /* UIColorExtension.swift in Sources */,
 				83428D6D1BF0594200A73DDA /* WishlistViewController.swift in Sources */,
 				83428D7B1BF06FC000A73DDA /* StoryboardManager.swift in Sources */,
 				83428D771BF05AAF00A73DDA /* BaseViewController.swift in Sources */,
-				83428D751BF05A4A00A73DDA /* UIViewControllerExtension.swift in Sources */,
 				83428D6F1BF0597E00A73DDA /* AccountViewController.swift in Sources */,
 				83428D341BF053FA00A73DDA /* AppDelegate.swift in Sources */,
 				83428D711BF059B000A73DDA /* CheckoutViewController.swift in Sources */,
 				83428D671BF0587A00A73DDA /* FeaturedViewController.swift in Sources */,
+				83428D7F1BF092BB00A73DDA /* UIImageExtension.swift in Sources */,
 				83428D731BF059E100A73DDA /* ProductViewController.swift in Sources */,
 				83428D691BF058AF00A73DDA /* CategoriesViewController.swift in Sources */,
 				83428D651BF057C400A73DDA /* MainViewController.swift in Sources */,

@@ -19,3 +19,10 @@ struct Storyboard {
     static let Checkout     = "Checkout"
     static let Product      = "Product"
 }
+
+struct ScreenSize {
+    static let WIDTH      = UIScreen.mainScreen().bounds.size.width
+    static let HEIGHT     = UIScreen.mainScreen().bounds.size.height
+    static let MAX_LENGTH = max(ScreenSize.WIDTH, ScreenSize.HEIGHT)
+    static let MIN_LENGTH = min(ScreenSize.WIDTH, ScreenSize.HEIGHT)
+}

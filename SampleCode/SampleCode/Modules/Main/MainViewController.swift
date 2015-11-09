@@ -33,6 +33,8 @@ class MainViewController: UITabBarController {
         vcAccount.tabBarItem.image = UIImage(named: "account")
         vcAccount.tabBarItem.title = "Account"
         
+        self.tabBar.tintColor = UIColor.hexColor("#4dd2cb", alpha: 1.0)
+        
         self.viewControllers = [vcFeatured, vcCategories, vcSearch, vcWishlist, vcAccount];
     }
 

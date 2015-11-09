@@ -14,6 +14,7 @@ class AccountViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Account"
     }
 
     override func didReceiveMemoryWarning() {
