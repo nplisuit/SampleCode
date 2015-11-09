@@ -26,3 +26,7 @@ struct ScreenSize {
     static let MAX_LENGTH = max(ScreenSize.WIDTH, ScreenSize.HEIGHT)
     static let MIN_LENGTH = min(ScreenSize.WIDTH, ScreenSize.HEIGHT)
 }
+
+struct Url {
+    static let images = "https://www.flickr.com/photos/thomas-riecken/sets/72157632235898427"
+}
