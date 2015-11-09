@@ -16,4 +16,9 @@ class CatalogCell: UICollectionViewCell {
         // Initialization code
     }
 
+    func renderData(data:NSDictionary){
+        let sUrl = data.objectForKey("url_m") as! String
+        let urlImage = NSURL(string: sUrl)
+        self.imgvCatalog?.sd_setImageWithURL( urlImage, placeholderImage: UIImage(named: "place_holder"))
+    }
 }

@@ -28,5 +28,5 @@ struct ScreenSize {
 }
 
 struct Url {
-    static let images = "http://hieudady.alwaysdata.net/api.php"
+    static let images = "https://api.flickr.com/services/rest/"
 }

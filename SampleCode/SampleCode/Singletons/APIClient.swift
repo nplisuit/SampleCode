@@ -25,8 +25,18 @@ class APIClient{
         self.manager = AFHTTPRequestOperationManager()
     }
     
-    func getImage(completed:(resObj:Array<String>) -> ()){
-        self.manager?.GET(Url.images, parameters: nil, success: { (manager, response) -> Void in
+    func getImage(completed:(resObj:NSArray) -> ()){
+        let methodArguments = [
+            "method": "flickr.galleries.getPhotos",
+            "api_key": "ac1cafbb552920263ceae93cbaeb42be",
+            "gallery_id": "5704-72157622566655097",
+            "extras": "url_m",
+            "format": "json",
+            "nojsoncallback": "1"
+        ]
+        self.manager?.GET(Url.images, parameters: methodArguments, success: { (manager, response) -> Void in
+            let array:NSArray = response.objectForKey("photos")!.objectForKey("photo") as! NSArray
+            completed(resObj: array)
 
             }, failure: { (manager, error) -> Void in
                 

@@ -11,7 +11,7 @@ import UIKit
 class FeaturedViewController: BaseViewController {
 
     @IBOutlet weak var clvCategories: UICollectionView?
-    var arrResult:Array<String>?
+    var arrResult:NSArray?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,9 +19,10 @@ class FeaturedViewController: BaseViewController {
         self.navigationItem.title = "Featured"
         
         self.clvCategories?.registerNib(UINib(nibName: "CatalogCell", bundle: nil), forCellWithReuseIdentifier: "CatalogCell")
-        
+        self.arrResult = NSArray()
         APIClient.sharedInstance.getImage { (resObj) -> () in
-            
+            self.arrResult = resObj
+            self.clvCategories?.reloadData()
         }
     }
 
@@ -50,11 +51,12 @@ extension FeaturedViewController:UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.arrResult!.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CatalogCell", forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CatalogCell", forIndexPath: indexPath) as! CatalogCell
+        cell.renderData(self.arrResult![indexPath.row] as! NSDictionary)
         return cell
     }
     
