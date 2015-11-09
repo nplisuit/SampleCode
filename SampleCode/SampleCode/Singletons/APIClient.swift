@@ -25,11 +25,10 @@ class APIClient{
         self.manager = AFHTTPRequestOperationManager()
     }
     
-    func getImage(completed:(NSDictionary)){
-        self.manager?.GET(Url.images, parameters:[] , success: { (manager, resObj) -> Void in
-            
-            
-            }, failure: { (request, error) -> Void in
+    func getImage(completed:(resObj:Array<String>) -> ()){
+        self.manager?.GET(Url.images, parameters: nil, success: { (manager, response) -> Void in
+
+            }, failure: { (manager, error) -> Void in
                 
         })
     }

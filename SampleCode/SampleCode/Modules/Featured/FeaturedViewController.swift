@@ -11,6 +11,7 @@ import UIKit
 class FeaturedViewController: BaseViewController {
 
     @IBOutlet weak var clvCategories: UICollectionView?
+    var arrResult:Array<String>?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +19,10 @@ class FeaturedViewController: BaseViewController {
         self.navigationItem.title = "Featured"
         
         self.clvCategories?.registerNib(UINib(nibName: "CatalogCell", bundle: nil), forCellWithReuseIdentifier: "CatalogCell")
+        
+        APIClient.sharedInstance.getImage { (resObj) -> () in
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
