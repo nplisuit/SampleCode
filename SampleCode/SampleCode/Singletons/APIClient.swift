@@ -35,8 +35,11 @@ class APIClient{
             "nojsoncallback": "1"
         ]
         self.manager?.GET(Url.images, parameters: methodArguments, success: { (manager, response) -> Void in
-            let array:NSArray = response.objectForKey("photos")!.objectForKey("photo") as! NSArray
-            completed(resObj: array)
+            let status = response.objectForKey("stat") as! String
+            if( status == "ok"){
+                let array:NSArray = response.objectForKey("photos")!.objectForKey("photo") as! NSArray
+                completed(resObj: array)
+            }
 
             }, failure: { (manager, error) -> Void in
                 
