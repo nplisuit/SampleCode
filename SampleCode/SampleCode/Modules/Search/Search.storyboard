@@ -33,8 +33,23 @@
                     <view key="view" contentMode="scaleToFill" id="YBX-QX-rzO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="search" translatesAutoresizingMaskIntoConstraints="NO" id="b5H-Xd-N2F">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RXA-XH-WlK"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b5H-Xd-N2F" firstAttribute="top" secondItem="aoF-XD-pAi" secondAttribute="bottom" id="C6R-Cg-Cjh"/>
+                            <constraint firstAttribute="trailing" secondItem="b5H-Xd-N2F" secondAttribute="trailing" id="VLB-gV-cwb"/>
+                            <constraint firstItem="b5H-Xd-N2F" firstAttribute="leading" secondItem="YBX-QX-rzO" secondAttribute="leading" id="fEF-az-3Mb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X1J-qU-oto"/>
                 </viewController>
