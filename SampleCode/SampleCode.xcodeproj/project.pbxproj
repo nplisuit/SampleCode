@@ -28,6 +28,8 @@
 		83428D731BF059E100A73DDA /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D721BF059E100A73DDA /* ProductViewController.swift */; };
 		83428D751BF05A4A00A73DDA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D741BF05A4A00A73DDA /* UIViewControllerExtension.swift */; };
 		83428D771BF05AAF00A73DDA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D761BF05AAF00A73DDA /* BaseViewController.swift */; };
+		83428D791BF06F2E00A73DDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D781BF06F2E00A73DDA /* Constants.swift */; };
+		83428D7B1BF06FC000A73DDA /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83428D7A1BF06FC000A73DDA /* StoryboardManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		83428D721BF059E100A73DDA /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		83428D741BF05A4A00A73DDA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		83428D761BF05AAF00A73DDA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		83428D781BF06F2E00A73DDA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83428D7A1BF06FC000A73DDA /* StoryboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		83428D451BF0549B00A73DDA /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
+				83428D7A1BF06FC000A73DDA /* StoryboardManager.swift */,
 			);
 			path = Singletons;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				83428D761BF05AAF00A73DDA /* BaseViewController.swift */,
+				83428D781BF06F2E00A73DDA /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 			files = (
 				83428D6B1BF058EF00A73DDA /* SearchViewController.swift in Sources */,
 				83428D6D1BF0594200A73DDA /* WishlistViewController.swift in Sources */,
+				83428D7B1BF06FC000A73DDA /* StoryboardManager.swift in Sources */,
 				83428D771BF05AAF00A73DDA /* BaseViewController.swift in Sources */,
 				83428D751BF05A4A00A73DDA /* UIViewControllerExtension.swift in Sources */,
 				83428D6F1BF0597E00A73DDA /* AccountViewController.swift in Sources */,
@@ -322,6 +329,7 @@
 				83428D731BF059E100A73DDA /* ProductViewController.swift in Sources */,
 				83428D691BF058AF00A73DDA /* CategoriesViewController.swift in Sources */,
 				83428D651BF057C400A73DDA /* MainViewController.swift in Sources */,
+				83428D791BF06F2E00A73DDA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

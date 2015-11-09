@@ -1,0 +1,21 @@
+//
+//  Constants.swift
+//  SampleCode
+//
+//  Created by Nguyen Phuc Loc on 11/9/15.
+//  Copyright © 2015 locnp. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+// MARK: Storyboard
+struct Storyboard {
+    static let Featured     = "Featured"
+    static let Categories   = "Categories"
+    static let Search       = "Search"
+    static let Wishlist     = "Wishlist"
+    static let Account      = "Account"
+    static let Checkout     = "Checkout"
+    static let Product      = "Product"
+}

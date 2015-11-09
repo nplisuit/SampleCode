@@ -15,7 +15,7 @@
                         <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="U8a-hx-ZTD" kind="show" id="EV6-Wv-cdQ"/>
+                        <segue destination="U8a-hx-ZTD" kind="relationship" relationship="rootViewController" id="IuA-Gk-hBd"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MF9-kF-a78" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -36,10 +36,11 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qhz-X2-yAK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9E-g2-18w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="413"/>
+            <point key="canvasLocation" x="1066" y="410"/>
         </scene>
     </scenes>
 </document>

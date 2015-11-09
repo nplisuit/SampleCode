@@ -13,7 +13,27 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let vcFeatured = StoryboardManager.sharedInstance.getInitialViewController(Storyboard.Featured) as! UINavigationController
+        vcFeatured.tabBarItem.image = UIImage(named: "star")
+        vcFeatured.tabBarItem.title = "Featured"
+        
+        let vcCategories = StoryboardManager.sharedInstance.getInitialViewController(Storyboard.Categories) as! UINavigationController
+        vcCategories.tabBarItem.image = UIImage(named: "menu")
+        vcCategories.tabBarItem.title = "Categories"
+        
+        let vcSearch = StoryboardManager.sharedInstance.getInitialViewController(Storyboard.Search) as! UINavigationController
+        vcSearch.tabBarItem.image = UIImage(named: "search")
+        vcSearch.tabBarItem.title = "Search"
+        
+        let vcWishlist = StoryboardManager.sharedInstance.getInitialViewController(Storyboard.Wishlist) as! UINavigationController
+        vcWishlist.tabBarItem.image = UIImage(named: "heart")
+        vcWishlist.tabBarItem.title = "Wishlist"
+        
+        let vcAccount = StoryboardManager.sharedInstance.getInitialViewController(Storyboard.Account) as! UINavigationController
+        vcAccount.tabBarItem.image = UIImage(named: "account")
+        vcAccount.tabBarItem.title = "Account"
+        
+        self.viewControllers = [vcFeatured, vcCategories, vcSearch, vcWishlist, vcAccount];
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +41,6 @@ class MainViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
